@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SpeedCheck – Internet Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>SpeedCheck</header>
+  <main>
+    <div class="label" id="label">Your Internet Speed Is</div>
+    <div class="speed"><div id="num">0</div><div id="unit">Mbps</div></div>
+    <div id="status">Ready</div>
+    <div class="bar"><i id="prog"></i></div>
+    <canvas id="chart" width="1040" height="180"></canvas>
+    <div id="more">
+      <div class="card"><small>Latency</small><b id="ping">–</b><span>ms</span></div>
+      <div class="card"><small>Download</small><b id="dl">–</b><span>Mbps</span></div>
+      <div class="card"><small>Upload</small><b id="ul">–</b><span>Mbps</span></div>
+    </div>
+    <div class="btns">
+      <button class="pri" id="start">Start Test</button>
+      <button id="toggle">Show More Info</button>
+    </div>
+  </main>
+  <footer>Powered by Cloudflare Speed Endpoints · Results May Vary By Server and Device</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
